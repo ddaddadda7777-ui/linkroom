@@ -361,3 +361,128 @@ a {
 .form-group button:hover {
   background-color: #1a5bb5;
 }
+
+/* Free Board Section */
+.freeboard-list-section, .freeboard-detail-section, .freeboard-form-section {
+  background-color: #fff;
+  border-radius: 8px;
+  padding: 40px;
+  margin-top: 40px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.freeboard-list-section__title, .freeboard-detail-section__title, .freeboard-form-section__title {
+  font-size: 28px;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+/* Action Buttons */
+.action-btn {
+  background-color: #2a7de1;
+  color: #fff;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 4px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  margin-right: 10px;
+}
+
+.action-btn:hover {
+  background-color: #1a5bb5;
+}
+
+.action-btn.cancel-btn {
+  background-color: #6c757d;
+}
+
+.action-btn.cancel-btn:hover {
+  background-color: #5a6268;
+}
+
+/* Free Board Table */
+.freeboard-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+.freeboard-table th, .freeboard-table td {
+  border: 1px solid #e0e0e0;
+  padding: 12px 15px;
+  text-align: left;
+}
+
+.freeboard-table thead th {
+  background-color: #f4f6f9;
+  font-weight: bold;
+}
+
+.freeboard-table tbody tr:hover {
+  background-color: #f0f4ff;
+}
+
+.freeboard-table a {
+  color: #2a7de1;
+}
+
+.freeboard-table a:hover {
+  text-decoration: underline;
+}
+
+/* Post Detail */
+.post-meta {
+  font-size: 14px;
+  color: #666;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.post-content {
+  padding: 20px 0;
+  border-top: 1px solid #eee;
+  border-bottom: 1px solid #eee;
+  margin-bottom: 20px;
+  line-height: 1.6;
+}
+
+.post-actions {
+  text-align: right;
+  margin-top: 20px;
+}
+
+/* Free Board Form */
+.freeboard-form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+/* Pagination */
+.pagination {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.pagination a {
+  color: #2a7de1;
+  padding: 8px 16px;
+  text-decoration: none;
+  border: 1px solid #ddd;
+  margin: 0 4px;
+  border-radius: 4px;
+}
+
+.pagination a.active {
+  background-color: #2a7de1;
+  color: white;
+  border: 1px solid #2a7de1;
+}
+
+.pagination a:hover:not(.active) {
+  background-color: #f1f1f1;
+}

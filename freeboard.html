@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Free Board - LinkRoom</title>
+  <link href='/style.css' rel='stylesheet'>
+</head>
+<body>
+  <header class="header">
+    <div class="container">
+      <div class="header__inner">
+        <a href="/" class="header__logo">LinkRoom</a>
+        <nav class="header__nav">
+          <div class="dropdown">
+            <a href="#" class="dropbtn">사이트맵</a>
+            <div class="dropdown-content">
+              <a href="#">성인</a>
+              <a href="#">웹툰</a>
+              <a href="#">다시보기</a>
+              <a href="#">토렌트</a>
+              <a href="#">유흥/오피</a>
+              <a href="#">먹튀검증</a>
+              <a href="#">스포츠중계</a>
+              <a href="#">성인용품</a>
+            </div>
+          </div>
+          <a href="/notice.html">공지사항</a>
+          <a href="/freeboard.html">자유게시판</a>
+          <a href="#">텔레문의</a>
+          <a href="#">로그인</a>
+        </nav>
+      </div>
+    </div>
+  </header>
+
+  <main class="main">
+    <div class="container">
+      <section class="freeboard-list-section">
+        <h1 class="freeboard-list-section__title">자유게시판</h1>
+        <button id="write-post-btn" class="action-btn">글 작성</button>
+        <table class="freeboard-table">
+          <thead>
+            <tr>
+              <th>번호</th>
+              <th>제목</th>
+              <th>작성자</th>
+              <th>작성일</th>
+              <th>조회수</th>
+            </tr>
+          </thead>
+          <tbody id="post-list-body">
+            <!-- Posts will be loaded here by JavaScript -->
+            <tr>
+              <td>1</td>
+              <td><a href="#" data-id="1">첫번째 게시글입니다.</a></td>
+              <td>작성자1</td>
+              <td>2026-02-28</td>
+              <td>15</td>
+            </tr>
+            <tr>
+              <td>2</td>
+              <td><a href="#" data-id="2">두번째 게시글입니다.</a></td>
+              <td>작성자2</td>
+              <td>2026-02-28</td>
+              <td>22</td>
+            </tr>
+          </tbody>
+        </table>
+        <div class="pagination">
+          <!-- Pagination will be handled by JavaScript -->
+          <a href="#">&laquo;</a>
+          <a href="#" class="active">1</a>
+          <a href="#">2</a>
+          <a href="#">3</a>
+          <a href="#">&raquo;</a>
+        </div>
+      </section>
+
+      <section class="freeboard-detail-section" style="display: none;">
+        <h1 class="freeboard-detail-section__title">게시글 상세</h1>
+        <h2 id="detail-title"></h2>
+        <p class="post-meta">
+          <span>작성자: <span id="detail-author"></span></span> |
+          <span>작성일: <span id="detail-date"></span></span> |
+          <span>조회수: <span id="detail-views"></span></span>
+        </p>
+        <div id="detail-content" class="post-content"></div>
+        <div class="post-actions">
+          <button id="edit-post-btn" class="action-btn">수정</button>
+          <button id="delete-post-btn" class="action-btn">삭제</button>
+          <button id="list-post-btn" class="action-btn">목록</button>
+        </div>
+      </section>
+
+      <section class="freeboard-form-section" style="display: none;">
+        <h1 class="freeboard-form-section__title">게시글 작성/수정</h1>
+        <form class="freeboard-form" id="post-form">
+          <input type="hidden" id="post-id">
+          <div class="form-group">
+            <label for="form-title">제목</label>
+            <input type="text" id="form-title" name="title" required>
+          </div>
+          <div class="form-group">
+            <label for="form-author">작성자</label>
+            <input type="text" id="form-author" name="author" required>
+          </div>
+          <div class="form-group">
+            <label for="form-password">비밀번호 (수정/삭제 시 필요)</label>
+            <input type="password" id="form-password" name="password" required>
+          </div>
+          <div class="form-group">
+            <label for="form-content">내용</label>
+            <textarea id="form-content" name="content" rows="10" required></textarea>
+          </div>
+          <div class="form-group">
+            <label for="form-attachments">사진/영상/링크 (텍스트로 입력)</label>
+            <textarea id="form-attachments" name="attachments" rows="3" placeholder="예: 이미지 URL, 비디오 임베드 코드, 외부 링크"></textarea>
+          </div>
+          <div class="form-group">
+            <button type="submit" class="action-btn">저장</button>
+            <button type="button" id="cancel-form-btn" class="action-btn cancel-btn">취소</button>
+          </div>
+        </form>
+      </section>
+    </div>
+  </main>
+
+  <script defer type="text/javascript" src="/main.js"></script>
+</body>
+</html>
