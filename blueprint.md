@@ -9,10 +9,11 @@ LinkRoom is a website that provides ranking information for various content-spec
 ### Layout
 - **Top Navigation Bar:**
   - Left: Site title "LinkRoom" (serves as a home button).
-  - Right: "Sitemap", "Notice", "Free Board", "Telegram Inquiry", "Login".
+  - Right:
+    - **Sitemap Dropdown:** On hover, displays a list of ranking categories.
+    - "Notice", "Free Board", "Telegram Inquiry", "Login".
 - **Banner Ads:** Three banner ad slots are placed below the navigation bar.
 - **Site Rankings:** A section below the ads displays the rankings.
-- **Sitemap Page:** A page that outlines the structure of the website. It includes links to the homepage and all the ranking categories.
 
 ### Site Rankings
 The following categories are included, each with rankings from 1 to 7:
@@ -25,10 +26,14 @@ The following categories are included, each with rankings from 1 to 7:
 - Sports broadcasting
 - Adult goods
 
-## Current Task: Create Sitemap Page
+## Current Task: Change Sitemap to Dropdown Menu
 
 ### Plan
 1.  **Update `blueprint.md`:** Done.
-2.  **Create `sitemap.html`:** Create a new HTML file for the sitemap.
-3.  **Modify `index.html`:** Link the "Sitemap" in the navigation bar to `sitemap.html`.
-4.  **Modify `style.css`:** Add styles for the sitemap page.
+2.  **Modify `index.html`:**
+    *   Change the "사이트맵" link in the navigation to incorporate a dropdown structure.
+    *   Add the ranking categories within this dropdown.
+3.  **Modify `style.css`:**
+    *   Add CSS to style the dropdown menu.
+    *   Implement hover functionality to display the dropdown.
+4.  **Remove `sitemap.html`:** The separate sitemap page is no longer needed.
