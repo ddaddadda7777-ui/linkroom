@@ -119,36 +119,97 @@ a {
 }
 
 /* Responsive */
-
 @media (max-width: 768px) {
+  .container {
+    padding: 0 10px; /* Reduce padding on smaller screens */
+  }
 
   .header__inner {
-
     flex-direction: column;
-
-    gap: 20px;
-
+    gap: 15px; /* Adjust gap for vertical stacking */
+    text-align: center;
   }
-
-
 
   .header__nav {
-
     flex-wrap: wrap;
-
     justify-content: center;
-
+    gap: 10px; /* Adjust gap for wrapped navigation items */
   }
 
-
+  .header__nav a, .dropbtn {
+    font-size: 14px; /* Smaller font size for nav links */
+    padding: 8px 12px;
+  }
 
   .banner-section {
-
-    grid-template-columns: 1fr;
-
+    grid-template-columns: 1fr; /* Stack banners vertically */
+    gap: 15px;
   }
 
+  .banner {
+    padding: 20px; /* Reduce banner padding */
+  }
+
+  .ranking-grid {
+    grid-template-columns: 1fr; /* Stack ranking categories vertically */
+  }
+
+  .ranking-category {
+    padding: 15px; /* Adjust padding for categories */
+  }
+
+  .ranking-category__title {
+    font-size: 18px; /* Smaller title font size */
+    margin-bottom: 15px;
+  }
+
+  .ranking-category__list li {
+    margin-bottom: 8px;
+  }
+
+  .notice-section, .notice-form-section,
+  .freeboard-list-section, .freeboard-detail-section, .freeboard-form-section {
+    padding: 20px; /* Adjust section padding */
+    margin-top: 20px;
+  }
+
+  .notice-section__title, .notice-form-section__title,
+  .freeboard-list-section__title, .freeboard-detail-section__title, .freeboard-form-section__title {
+    font-size: 24px; /* Smaller title font size */
+    margin-bottom: 15px;
+  }
+
+  /* Make tables responsive by allowing horizontal scroll */
+  .notice-table-container, .freeboard-table-container {
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch; /* Enable smooth scrolling on iOS */
+  }
+
+  .notice-table, .freeboard-table {
+    width: 600px; /* Minimum width to prevent content from collapsing too much */
+    min-width: max-content; /* Ensure table content is not cut off */
+  }
+
+  .action-btn {
+    width: 100%; /* Full width buttons */
+    margin-right: 0;
+    margin-bottom: 10px; /* Space between stacked buttons */
+  }
+
+  .post-actions {
+    text-align: center; /* Center actions on mobile */
+  }
+
+  .form-group {
+    width: 100%; /* Forms take full width */
+  }
+
+  .pagination a {
+    padding: 6px 12px; /* Smaller pagination buttons */
+    font-size: 14px;
+  }
 }
+
 
 
 

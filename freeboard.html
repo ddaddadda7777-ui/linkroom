@@ -39,34 +39,36 @@
       <section class="freeboard-list-section">
         <h1 class="freeboard-list-section__title">자유게시판</h1>
         <button id="write-post-btn" class="action-btn">글 작성</button>
-        <table class="freeboard-table">
-          <thead>
-            <tr>
-              <th>번호</th>
-              <th>제목</th>
-              <th>작성자</th>
-              <th>작성일</th>
-              <th>조회수</th>
-            </tr>
-          </thead>
-          <tbody id="post-list-body">
-            <!-- Posts will be loaded here by JavaScript -->
-            <tr>
-              <td>1</td>
-              <td><a href="#" data-id="1">첫번째 게시글입니다.</a></td>
-              <td>작성자1</td>
-              <td>2026-02-28</td>
-              <td>15</td>
-            </tr>
-            <tr>
-              <td>2</td>
-              <td><a href="#" data-id="2">두번째 게시글입니다.</a></td>
-              <td>작성자2</td>
-              <td>2026-02-28</td>
-              <td>22</td>
-            </tr>
-          </tbody>
-        </table>
+        <div class="freeboard-table-container">
+          <table class="freeboard-table">
+            <thead>
+              <tr>
+                <th>번호</th>
+                <th>제목</th>
+                <th>작성자</th>
+                <th>작성일</th>
+                <th>조회수</th>
+              </tr>
+            </thead>
+            <tbody id="post-list-body">
+              <!-- Posts will be loaded here by JavaScript -->
+              <tr>
+                <td>1</td>
+                <td><a href="#" data-id="1">첫번째 게시글입니다.</a></td>
+                <td>작성자1</td>
+                <td>2026-02-28</td>
+                <td>15</td>
+              </tr>
+              <tr>
+                <td>2</td>
+                <td><a href="#" data-id="2">두번째 게시글입니다.</a></td>
+                <td>작성자2</td>
+                <td>2026-02-28</td>
+                <td>22</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
         <div class="pagination">
           <!-- Pagination will be handled by JavaScript -->
           <a href="#">&laquo;</a>
