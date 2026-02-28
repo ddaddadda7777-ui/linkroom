@@ -12,6 +12,7 @@ LinkRoom is a website that provides ranking information for various content-spec
   - Right: "Sitemap", "Notice", "Free Board", "Telegram Inquiry", "Login".
 - **Banner Ads:** Three banner ad slots are placed below the navigation bar.
 - **Site Rankings:** A section below the ads displays the rankings.
+- **Sitemap Page:** A page that outlines the structure of the website. It includes links to the homepage and all the ranking categories.
 
 ### Site Rankings
 The following categories are included, each with rankings from 1 to 7:
@@ -24,10 +25,10 @@ The following categories are included, each with rankings from 1 to 7:
 - Sports broadcasting
 - Adult goods
 
-## Current Task
+## Current Task: Create Sitemap Page
 
 ### Plan
-1.  **Create `blueprint.md`:** Done.
-2.  **Modify `index.html`:** Structure the website with a header, navigation, ad banner section, and ranking section.
-3.  **Modify `style.css`:** Style all the new elements for a modern and clean look.
-4.  **Modify `main.js`:** Add interactivity, starting with the home button functionality for the site title.
+1.  **Update `blueprint.md`:** Done.
+2.  **Create `sitemap.html`:** Create a new HTML file for the sitemap.
+3.  **Modify `index.html`:** Link the "Sitemap" in the navigation bar to `sitemap.html`.
+4.  **Modify `style.css`:** Add styles for the sitemap page.
