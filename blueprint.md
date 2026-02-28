@@ -14,6 +14,7 @@ LinkRoom is a website that provides ranking information for various content-spec
     - "Notice", "Free Board", "Telegram Inquiry", "Login".
 - **Banner Ads:** Three banner ad slots are placed below the navigation bar.
 - **Site Rankings:** A section below the ads displays the rankings.
+- **Notice Page:** A page to display a list of notices and a form to create new ones.
 
 ### Site Rankings
 The following categories are included, each with rankings from 1 to 7:
@@ -26,14 +27,10 @@ The following categories are included, each with rankings from 1 to 7:
 - Sports broadcasting
 - Adult goods
 
-## Current Task: Change Sitemap to Dropdown Menu
+## Current Task: Create Notice Page
 
 ### Plan
 1.  **Update `blueprint.md`:** Done.
-2.  **Modify `index.html`:**
-    *   Change the "사이트맵" link in the navigation to incorporate a dropdown structure.
-    *   Add the ranking categories within this dropdown.
-3.  **Modify `style.css`:**
-    *   Add CSS to style the dropdown menu.
-    *   Implement hover functionality to display the dropdown.
-4.  **Remove `sitemap.html`:** The separate sitemap page is no longer needed.
+2.  **Create `notice.html`:** Create a new HTML file for the notice page, including a list and a form.
+3.  **Modify `index.html`:** Link the "Notice" in the navigation bar to `notice.html`.
+4.  **Modify `style.css`:** Add styles for the notice page.
