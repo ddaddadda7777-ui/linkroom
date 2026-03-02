@@ -118,6 +118,43 @@ a {
   color: #2a7de1;
 }
 
+/* Medal Styles */
+.ranking-category__list--medal a {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.medal {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  font-weight: bold;
+  font-size: 16px;
+  color: #fff;
+  flex-shrink: 0;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+  position: relative;
+}
+
+.medal--gold {
+  background: linear-gradient(135deg, #ffd700 0%, #ffae00 100%);
+  border: 2px solid #ffae00;
+}
+
+.medal--silver {
+  background: linear-gradient(135deg, #c0c0c0 0%, #808080 100%);
+  border: 2px solid #808080;
+}
+
+.medal--bronze {
+  background: linear-gradient(135deg, #cd7f32 0%, #8b4513 100%);
+  border: 2px solid #8b4513;
+}
+
 /* Responsive */
 @media (max-width: 768px) {
   .container {
