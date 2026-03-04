@@ -64,8 +64,8 @@ a {
 }
 
 .banner {
-  background: linear-gradient(135deg, rgba(42, 125, 225, 0.8) 0%, rgba(26, 91, 181, 0.8) 100%), 
-              url('https://images.unsplash.com/photo-1614850523296-e8c041de4398?q=80&w=2070&auto=format&fit=crop');
+  background: linear-gradient(135deg, rgba(0, 0, 0, 0.7) 0%, rgba(181, 26, 26, 0.6) 100%), 
+              url('https://images.unsplash.com/photo-1596838132731-3301c3fd4317?q=80&w=2070&auto=format&fit=crop');
   background-size: cover;
   background-position: center;
   border-radius: 12px;
@@ -77,7 +77,7 @@ a {
   letter-spacing: 2px;
   text-shadow: 3px 3px 6px rgba(0,0,0,0.4);
   transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-  box-shadow: 0 10px 25px rgba(42, 125, 225, 0.3);
+  box-shadow: 0 10px 25px rgba(181, 26, 26, 0.3);
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -91,7 +91,7 @@ a {
 
 .banner:hover {
   transform: translateY(-8px) scale(1.01);
-  box-shadow: 0 20px 40px rgba(42, 125, 225, 0.5);
+  box-shadow: 0 20px 40px rgba(181, 26, 26, 0.5);
 }
 
 .banner::before {
