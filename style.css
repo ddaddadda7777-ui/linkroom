@@ -31,9 +31,10 @@ a {
 }
 
 .header__logo {
-  font-size: 24px;
-  font-weight: bold;
+  font-size: 30px;
+  font-weight: 800;
   color: #2a7de1;
+  letter-spacing: -0.5px;
 }
 
 .header__nav {
